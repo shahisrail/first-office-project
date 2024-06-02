@@ -1,0 +1,249 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap);
+.b-vimeo-embed__close {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-color: #028065;
+    border: unset;
+    border-radius: 20px;
+    cursor: pointer;
+    height: 40px;
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    width: 40px;
+    z-index: 50
+}
+
+.b-vimeo-embed__close:after,
+.b-vimeo-embed__close:before {
+    background-color: #83deb2;
+    content: " ";
+    cursor: pointer;
+    height: 20px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    width: 2px
+}
+
+.b-vimeo-embed__close:before {
+    transform: translate(-50%, -50%) rotate(45deg)
+}
+
+.b-vimeo-embed__close:after {
+    transform: translate(-50%, -50%) rotate(-45deg)
+}
+
+.b-vimeo-embed .video-circle,
+.b-vimeo-embed .video-circle:after {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    position: absolute;
+    width: 200px
+}
+
+.b-vimeo-embed .video-circle {
+    background-image: url(/_resources/themes/default/images/video-button-inner.svg);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.b-vimeo-embed .video-circle:after {
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-name: rotate;
+    animation-timing-function: linear;
+    background-image: url(/_resources/themes/default/images/video-button-outer.svg);
+    content: ""
+}
+
+label>input[type=radio] {
+    display: none
+}
+
+label>input[type=radio]:checked+:before {
+    background: radial-gradient(#000 0, #000 40%, transparent 50%, transparent);
+    border-color: #000
+}
+
+label>input[type=radio]+:before {
+    border: 1px solid #000;
+    border-radius: 50%;
+    content: "";
+    display: inline-block;
+    height: 17px;
+    margin-right: 10px;
+    vertical-align: middle;
+    width: 17px
+}
+
+.c-blogs__article-image {
+    border-radius: 0;
+    height: 300px
+}
+
+.c-blogs__author-image {
+    border-radius: 10rem
+}
+
+.c-blogs .active.c-pagination__list {
+    background-color: #c6f7ea;
+    border-radius: 5rem;
+    color: #000;
+    font-weight: 400;
+    padding: 9px
+}
+
+.c-blogs .c-pagination__list {
+    padding-bottom: 0;
+    padding-top: 10px
+}
+
+.c-blogs .c-pagination__link {
+    color: #000;
+    font-weight: 400
+}
+
+.c-blogs .c-pagination__link:focus,
+.c-blogs .c-pagination__link:hover {
+    color: #000
+}
+
+.c-blogs__reset {
+    color: #000;
+    text-decoration: none
+}
+
+.c-blogs__reset:focus,
+.c-blogs__reset:hover {
+    color: #000;
+    text-decoration: underline
+}
+
+.c-blogs__refine {
+    font-family: GT Super Display, serif;
+    font-size: 22px
+}
+
+.c-blogs__post-title {
+    font-family: GT Super Display, serif;
+    font-size: 28px
+}
+
+.c-blogs__read-more:after {
+    background-image: url(/assets/arrow-right.svg);
+    content: "";
+    display: inline-block;
+    height: 18px;
+    margin-left: 15px;
+    position: relative;
+    top: 5px;
+    width: 22px
+}
+
+.c-blogs__category {
+    background-color: #c6f7ea;
+    border-radius: 5em;
+    padding: 3px 15px
+}
+
+.c-blogs__featured-post {
+    border: 1px solid #000;
+    border-radius: 20rem
+}
+
+.c-blogs__featured-post a {
+    border-radius: 20rem
+}
+
+.c-blogs .b-form-basic select {
+    background: transparent;
+    background-image: url(/assets/plus-sign.png);
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    border: transparent;
+    padding: 0
+}
+
+.c-blogs__share {
+    color: #000;
+    font-size: 1.2rem;
+    text-decoration: none
+}
+
+.c-blogs__share:focus,
+.c-blogs__share:hover {
+    color: #000;
+    text-decoration: underline
+}
+
+.c-blog-article__recent {
+    background: transparent !important
+}
+
+.b-article__carousel hr,
+.c-blogs hr {
+    border: #000 !important;
+    margin: 0;
+    opacity: 1
+}
+
+.announcement-banner {
+    position: fixed;
+    width: 100%;
+    z-index: 100
+}
+
+.announcement-banner p {
+    margin-bottom: 0 !important
+}
+
+@media (max-width:1199.98px) {
+    .announcement-banner p {
+        font-size: 12px
+    }
+}
+
+.announcement-banner__close {
+    font-size: 50px;
+    line-height: 0px
+}
+
+.announcement-banner__close:hover {
+    cursor: pointer
+}
+
+.c-header {
+    top: 50px
+}
+
+.cursor-pointer {
+    cursor: pointer
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(-1turn)
+    }
+    to {
+        transform: rotate(1turn)
+    }
+}
+
+.c-basic-hero__main {
+    z-index: 6
+}
+
+.c-basic-hero__main:before {
+    background: rgba(0, 0, 0, .3);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10
+}
